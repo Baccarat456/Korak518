@@ -1,0 +1,38 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {
+        "fields": [
+          "title",
+          "tagline",
+          "votes",
+          "comments",
+          "makers",
+          "topics",
+          "product_url",
+          "ph_url",
+          "slug",
+          "posted_at"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "title": { "label": "Title", "format": "text" },
+          "tagline": { "label": "Tagline", "format": "text" },
+          "votes": { "label": "Votes", "format": "text" },
+          "comments": { "label": "Comments", "format": "text" },
+          "makers": { "label": "Makers", "format": "text" },
+          "topics": { "label": "Topics", "format": "text" },
+          "product_url": { "label": "Product URL", "format": "link" },
+          "ph_url": { "label": "Product Hunt URL", "format": "link" },
+          "slug": { "label": "Slug", "format": "text" },
+          "posted_at": { "label": "Posted at", "format": "text" }
+        }
+      }
+    }
+  }
+}

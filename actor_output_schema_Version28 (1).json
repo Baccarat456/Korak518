@@ -1,0 +1,11 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Output schema of the Product Hunt Launch of the Day Stats scraper",
+  "properties": {
+    "overview": {
+      "type": "string",
+      "title": "Overview",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    }
+  }
+}

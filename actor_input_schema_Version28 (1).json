@@ -1,0 +1,35 @@
+{
+  "title": "Input schema of the Product Hunt Launch of the Day Stats scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Product Hunt listing pages to start from (e.g. daily listing).",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://www.producthunt.com/"
+        }
+      ]
+    },
+    "maxRequestsPerCrawl": {
+      "title": "Max Requests per Crawl",
+      "type": "integer",
+      "description": "Maximum number of requests the crawler will perform.",
+      "default": 200
+    },
+    "useBrowser": {
+      "title": "Use Playwright (browser rendering)",
+      "type": "boolean",
+      "description": "Set true to use PlaywrightCrawler (recommended for Product Hunt due to client-side rendering).",
+      "default": false
+    },
+    "productHuntApiToken": {
+      "title": "Product Hunt API token (optional)",
+      "type": "string",
+      "description": "Optional Product Hunt API token if you prefer to use the official API for metadata (recommended for large-scale). Leave empty to scrape HTML."
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "Product Hunt Launch of the Day Stats scraper",
+  "title": "Product Hunt \"Launch of the Day\" Stats scraper",
+  "description": "Scrape Product Hunt posts (Launch of the Day / daily listing) and collect post metadata (title, tagline, votes, comments, makers, topics, product url, posted date).",
+  "version": "0.0",
+  "meta": {
+    "templateId": "ai-generated-actor",
+    "generatedBy": "Gpt-4o-mini"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}
